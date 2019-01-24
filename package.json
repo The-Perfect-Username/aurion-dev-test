@@ -1,0 +1,16 @@
+{
+    "name": "aurion",
+    "version": "0.1.0",
+    "scripts": {
+        "start": "node app.js",
+        "test": "mocha"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "mocha": "^5.2.0",
+        "supertest": "^3.4.2"
+    }
+}
