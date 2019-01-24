@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post("/creditcard/number", (req, res) => {
+
     const params = req.body;
     
     if (Object.keys(params).length === 0) {
@@ -32,6 +33,7 @@ app.post("/creditcard/number", (req, res) => {
         res.send("Number is empty");
         return;
     }
+    
     const isLuhnValidated = luhnCheck(number);
     const issuer = getIssuer(number);
 
